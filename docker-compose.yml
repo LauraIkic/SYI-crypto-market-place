@@ -4,7 +4,7 @@ services:
   mysql:
     image: mysql:8
     container_name: mysql-container-market-place
-    restart: always
+    restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: marketPlace
